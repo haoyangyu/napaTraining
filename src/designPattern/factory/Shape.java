@@ -1,4 +1,4 @@
-package decorator;
+package designPattern.factory;
 
 /**
  * Created by yuhaoy on 2/4/17.
