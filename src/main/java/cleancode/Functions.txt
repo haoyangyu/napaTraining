@@ -1,0 +1,42 @@
+Routines to subroutines
+Programs, subprograms and functions
+Functions survived
+
+Function rule of thumbs:
+1. They should be small
+2. They should be smaller than small - Show the example Should Stop Processing in Slang
+3. Functions should hardly ever by 20 lines long
+4. The blocks with if/else/while statements should only be one line long - prob. a function call
+5. Indent the functions should not be greater than one or two
+6. Functions should do one thing. They should do it well. They should do it only(SRP - Single Responsibility Principle + OCP - Open Closed Principle)
+    6.1. A function is doing more than “one thing” is if you can extract another function from it with a name that is not merely a restatement of its implementation
+    6.2. One level of abstraction per function
+    6.3. Top-down narrative
+    6.4. (Command Query Separation)Functions should either do something or answer something, but not both
+7. Switch/If-else chain - use to create the polymorphic objects
+8. Function name really matters - To verb + nouns
+9. Function arguments
+    9.1. niladic > monadic > dyadic > triadic > polyadic
+    9.2. mondic - query/command/event
+    9.3. Flag arguments - true/false - split into two functions
+    9.4. Argument Objects
+    9.5. Argument Lists
+10. No side effect
+11. Output arguments - this: act as an output argument
+12. Exceptions > Error codes
+13. Extract Try/Catch blocks - Error processing and natural processing should be separated
+14. Error handling is one thing - try should be the very first word, only try/catch | finally
+15. Avoid duplication codes
+16. Refactoring
+17. Remember systems are stories to be told
+
+Problem1:
+public boolean set(String attribute, String value);
+if(set(”username”, ”unclebob”))
+
+Solution1:
+1. if(setAndCheckIfExists(”username”, ”unclebob”))
+2. if (attributeExists(”username”)) {
+        setAttribute(”username”, ”unclebob”);
+        …
+      }

@@ -1,0 +1,9 @@
+Naming rules of thumbs - Precise
+1. Use intention-revealing names
+2. Avoid disinformation - accountList?
+3. Make meaningful distinctions - Product/ProductInfo/ProductData?
+4. Use pronounceable name
+5. Use searchable name
+6. Pick one word per concept
+7. Use solutions domain names
+8. Use problem domain names
