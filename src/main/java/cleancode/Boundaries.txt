@@ -1,0 +1,10 @@
+How to define the better boundary for the codes
+
+1. More encapsulation -  Map<Sensor> provides more capability than we need and want  - If the interface to Map ever change, we need to change all the interfaces that leverage the Map interface
+2. Write the test for the third-party code we use, third-party API – Tests, make it as the learning tests
+3. Third-party packages/APIs, need to checked in our Learning tests to make sure the code will stay compatible with our needs
+4. Adapter design pattern to convert from our perfect interface to the provided interface
+
+How to understand the Adapter Design Pattern
+
+Memory card -> Card reader -> A laptop

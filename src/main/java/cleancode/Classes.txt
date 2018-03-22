@@ -1,0 +1,12 @@
+The rule of thumbs for writing better classes
+
+1. Funcs and blocks are middle-layer or low levels of code organization. We also need to pay attention to higher levels of code organization
+2. Private utilities called by a public function right after the public function itself
+3. Classes should be small – count by responsibilities – should has single reason to change
+4. SRP( Single Responsibility Principle )
+5. Cohesion – Each variable is used by each method is maximally cohesive, when cohesion is high, it means that the methods and variables of the class are co-dependent and hang together as a logic whole
+6. Isolation from Change
+    6.a. TokyoStockExchange, StockExchange, Portfolio
+    6.b. Minimize coupling, our class adheres to another class – DIP( Dependency Inversion Principle ) – Our classes should depend upon abstractions, not on concrete details
+
+*Get software to work and making software clean are two very different activities

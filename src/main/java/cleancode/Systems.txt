@@ -1,0 +1,26 @@
+Systems - For a better system
+"Complexity kills. It sucks the life out of developers, it makes products difficult to plan, build, and test" - Ray Ozzie, CTO, Microsoft Corporation
+
+Discuss that how to stay clean at higher levels of abstraction.
+Separation of concerns:
+
+Lazy initialization/evaluation:
+public Service getService() {
+     if (service == null)
+       service = new MyServiceImpl(…); // Good enough default for most cases?
+     return service;
+}
+
+Separate construction from use - move all aspects of construction to main
+The application has no knowledge of main or the construction process.
+
+Factories Design Pattern
+
+Dependency Injection - the application of Inversion Of Control(IoC)
+IoC moves secondary responsibilities from an objects that are dedicated to the purpose
+
+Iterative and incremental agility( Code level: TTD, Refactoring, the clean code )
+
+Cross-cutting Concerns
+
+Java Proxy
